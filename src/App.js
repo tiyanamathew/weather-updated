@@ -16,7 +16,7 @@ export default function SearchEngine() {
     axios.get(urlForecast).then(showForecast);
   }
 
-  let today = today.getDate();
+let today = new Date();
   let hours = (today.getHours());
   let minutes = (today.getMinutes());
 
