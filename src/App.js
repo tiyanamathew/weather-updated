@@ -161,7 +161,7 @@ let today = new Date();
         </div>
       </div>
       <p id="github">
-        <a href="https://github.com/tiyanamathew/">Link to GitHub</a>
+        <a href="https://github.com/tiyanamathew/weather-updated">Link to GitHub</a>
       </p>
     </div>
   );
