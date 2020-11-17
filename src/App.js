@@ -81,7 +81,7 @@ export default function SearchEngine() {
         <div>
           <div className="col mb-3">
             <div className="card-body">
-              <h2 className="its">It is...</h2>
+<h2 className="its">It is... {text}</h2>
               <p className="sunny">Sunny! Don't forget your sunscreen. ☀️</p>
 
               <h2 className="its" id="weather-description">
