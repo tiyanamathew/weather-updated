@@ -54,7 +54,7 @@ let today = new Date();
           <div className="btn-group-vertical">
             <div className="col-2">
               <button id="celcius">C°</button>
-              <button id="farenhiet">F°</button>
+              <button id="farenhiet"><a href="./farenhiet.js">F°</a></button>
             </div>
           </div>
         </div>
