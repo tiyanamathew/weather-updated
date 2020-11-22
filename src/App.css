@@ -75,13 +75,26 @@
 }
 
 #celcius {
-  background: #ffd6e0;
+  background: transparent;
   border-color: #ff4271;
   color: #6c757d;
   text-decoration: none;
 }
 #farenhiet {
   background-color: transparent;
+  border-color: #ff4271;
+  color: #6c757d;
+  text-decoration: none;
+}
+#celcius :click {
+    background: #ffd6e0;
+  border-color: #ff4271;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+#farenhiet :click {
+    background: #ffd6e0;
   border-color: #ff4271;
   color: #6c757d;
   text-decoration: none;
