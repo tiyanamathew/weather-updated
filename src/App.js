@@ -48,7 +48,6 @@ let today = new Date();
               onChange={updateCity}
             />
             <input type="submit" value="Search" className="btn" />
-            <input type="submit" value="Current" className="btn" />
           </form>
 
           <div className="btn-group-vertical">
