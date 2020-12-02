@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./App.css
+import "./App.css";
 import axios from "axios";
 export default function SearchEngine() {
   let [temperature, setTemperature] = useState("");
@@ -15,8 +15,7 @@ export default function SearchEngine() {
     let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
     axios.get(urlForecast).then(showForecast);
   }
-
-let today = new Date();
+  let today = new Date();
   let hours = (today.getHours());
   let minutes = (today.getMinutes());
 
@@ -80,7 +79,7 @@ let today = new Date();
         <div>
           <div className="col mb-3">
             <div className="card-body">
-<h2 className="its">It is... {text}</h2>
+              <h2 className="its">It is...</h2>
               <p className="sunny">Sunny! Don't forget your sunscreen. ☀️</p>
 
               <h2 className="its" id="weather-description">
@@ -160,7 +159,7 @@ let today = new Date();
         </div>
       </div>
       <p id="github">
-        <a href="https://github.com/tiyanamathew/weather-updated">Link to GitHub</a>
+        <a href="https://github.com/tiyanamathew/">Link to GitHub</a>
       </p>
     </div>
   );
