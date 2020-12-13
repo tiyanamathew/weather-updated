@@ -18,14 +18,14 @@ export default function SearchEngine() {
   }
 
   function showTemperature(response) {
-    setText(response.data.name);
+
     setTemperature(`It is currently ${Math.round(response.data.main.temp)}ºC.`);
     setHumidity(response.data.main.humidity);
     setWind(response.data.wind.speed);
   }
 
   function showForecast(response) {
-    setText(response.data.name);
+
     setForecast(response.data.main.forecast);
   }
 
