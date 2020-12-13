@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
+import date from "./date.js";
 export default function SearchEngine() {
   let [temperature, setTemperature] = useState("");
   let [forecast, setForecast] = useState("");
@@ -69,9 +70,7 @@ export default function SearchEngine() {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="card-body" id="te">
-                  <p id="date-time">Date And Time: <br /> {hours}:{minutes}</p>
-                </div>
+<date />
               </div>
             </div>
           </div>
