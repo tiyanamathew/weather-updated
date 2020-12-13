@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function FormattedDate(props) {
-
-  let hours = props.date.getHours();
+function Date {
+let date = new Date();
+  let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
   
-  let minutes = props.date.getMinutes();
+  let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
