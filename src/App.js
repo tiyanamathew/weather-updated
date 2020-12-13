@@ -8,7 +8,7 @@ export default function SearchEngine() {
   let [wind, setWind] = useState("");
   let [humidity, setHumidity] = useState("");
   const [city, setCity] = useState("");
-  const [text, setText] = useState("");
+  
   function handleSubmit(event) {
     event.preventDefault();
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
@@ -16,9 +16,6 @@ export default function SearchEngine() {
     let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
     axios.get(urlForecast).then(showForecast);
   }
-  let today = new Date();
-  let hours = (today.getHours());
-  let minutes = (today.getMinutes());
 
   function showTemperature(response) {
     setText(response.data.name);
