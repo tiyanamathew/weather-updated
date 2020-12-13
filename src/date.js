@@ -1,7 +1,7 @@
 import React from "react";
 
+export default function FormattedDate(props) {
 
-  let day = days[props.date.getDay()];
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -13,7 +13,7 @@ import React from "react";
   }
   return (
     <div>
-      {hours}:{minutes}
+{hours}:{minutes}
     </div>
   );
 }
