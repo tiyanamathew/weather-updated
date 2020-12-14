@@ -24,7 +24,7 @@ export default function SearchEngine() {
 
   function showTemperature(response) {
 
-    setTemperature(`currently ${Math.round(response.data.main.temp)}ºC.`);
+    setTemperature(`Currently ${Math.round(response.data.main.temp)}ºC.`);
     setHumidity(response.data.main.humidity);
     setWind(response.data.wind.speed);
   }
