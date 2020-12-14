@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
-
+import forecastino from "./WeatherForecast.js"
 export default function SearchEngine() {
   let [temperature, setTemperature] = useState("");
   let [forecast, setForecast] = useState("");
@@ -159,7 +159,7 @@ export default function SearchEngine() {
                 alt="weather"
               />
             </div>
-            <p className="card-text five">{forecast}</p>
+            <p className="card-text five">{forecastino}</p>
           </div>
         </div>
       </div>
