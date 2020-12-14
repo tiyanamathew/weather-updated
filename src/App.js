@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
-import date from "./date.js";
+
 export default function SearchEngine() {
   let [temperature, setTemperature] = useState("");
   let [forecast, setForecast] = useState("");
@@ -17,9 +17,10 @@ export default function SearchEngine() {
     axios.get(urlForecast).then(showForecast);
   }
 
+
   function showTemperature(response) {
 
-    setTemperature(`It is currently ${Math.round(response.data.main.temp)}ºC.`);
+    setTemperature(`currently ${Math.round(response.data.main.temp)}ºC.`);
     setHumidity(response.data.main.humidity);
     setWind(response.data.wind.speed);
   }
@@ -62,12 +63,12 @@ export default function SearchEngine() {
               <div className="col-12">
                 <div className="card-body">
                   <p id="city" className="card-text sunny its">
-                    {temperature}
+
                   </p>
                 </div>
               </div>
               <div className="col-md-6">
-<date />
+
               </div>
             </div>
           </div>
@@ -76,7 +77,7 @@ export default function SearchEngine() {
           <div className="col mb-3">
             <div className="card-body">
               <h2 className="its">It is...</h2>
-              <p className="sunny">Sunny! Don't forget your sunscreen. ☀️</p>
+              <p className="sunny">{temperature}</p>
 
               <h2 className="its" id="weather-description">
                 Precipitation:
