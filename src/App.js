@@ -102,7 +102,7 @@ export default function SearchEngine() {
 
             <p className="card-text five">{forecastino}</p>
           </div>
-        </div>
+
       </div>
       <p id="github">
         <a href="https://github.com/tiyanamathew/">Link to GitHub</a>
