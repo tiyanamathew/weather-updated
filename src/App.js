@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import axios from "axios";
 import forecastino from "./WeatherForecast.js"
+import WeatherTemperature from "./WeatherTemperature.js"
 export default function SearchEngine() {
   let [temperature, setTemperature] = useState("");
   let [forecast, setForecast] = useState("");
@@ -54,8 +55,6 @@ export default function SearchEngine() {
 
           <div className="btn-group-vertical">
             <div className="col-2">
-              <button id="celcius">C°</button>
-              <button id="farenhiet">F°</button>
             </div>
           </div>
         </div>
@@ -81,7 +80,7 @@ export default function SearchEngine() {
           <div className="col mb-3">
             <div className="card-body">
               <h2 className="its">It is...</h2>
-              <p className="sunny">{temperature}
+              <p className="sunny"> {WeatherTemperature}
     <br />
     {hours}h
     </p>
