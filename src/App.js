@@ -103,9 +103,10 @@ export default function SearchEngine() {
           </div>
 
      
-      <p id="github">
-        <a href="https://github.com/tiyanamathew/">Link to GitHub</a>
-      </p>
+
+        <a id="github"> href="https://github.com/tiyanamathew/">Link to GitHub</a>
+     
+    
     </div>
   );
 }
