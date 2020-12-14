@@ -94,7 +94,7 @@ export default function SearchEngine() {
                 <span id="wind"> {wind}km/h</span>
               </h2>
             </div>
-          </div>
+   
         </div>
       </div>
 
