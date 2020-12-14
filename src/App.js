@@ -16,6 +16,10 @@ export default function SearchEngine() {
     let urlForecast = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=3a94f3778290bfeee61278505dbbe51d&units=metric`;
     axios.get(urlForecast).then(showForecast);
   }
+  
+  let today = new Date();
+  let hours = (today.getHours());
+
 
 
   function showTemperature(response) {
@@ -77,7 +81,11 @@ export default function SearchEngine() {
           <div className="col mb-3">
             <div className="card-body">
               <h2 className="its">It is...</h2>
-              <p className="sunny">{temperature}</p>
+              <p className="sunny">{temperature}
+    <br />
+    {hours}h
+    </p>
+    
 
               <h2 className="its" id="weather-description">
                 Humidity:
