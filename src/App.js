@@ -80,11 +80,11 @@ export default function SearchEngine() {
               <p className="sunny">{temperature}</p>
 
               <h2 className="its" id="weather-description">
-                Precipitation:
-                <span id="humidity"> {humidity}</span>
+                Humidity:
+                <span id="humidity"> {humidity}%</span> 
                 <br />
                 Wind:
-                <span id="wind"> {wind}</span>
+                <span id="wind"> {wind}km/h</span>
               </h2>
             </div>
           </div>
