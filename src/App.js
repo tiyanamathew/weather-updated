@@ -28,8 +28,8 @@ function addZero(num) {
   function showTemperature(response) {
     setText(response.data.name);
     setTemperature(`currently ${Math.round(response.data.main.temp)}ºC.`);
-    setHumidity(response.data.main.humidity);
-    setWind(response.data.wind.speed);
+    setHumidity(response.data.main.humidity)%;
+    setWind(response.data.wind.speed) km/h;
   }
 
 
@@ -77,10 +77,10 @@ function addZero(num) {
                   </p>
               <h2 className="its" id="weather-description">
                 Precipitation:
-                <span id="humidity"> {humidity}%</span>
+                <span id="humidity"> {humidity}</span>
                 <br />
                 Wind:
-                <span id="wind"> {wind} km/h</span>
+                <span id="wind"> {wind}</span>
               </h2>
               <div className="card-body" id="te">
                   <p id="date-time">Date And Time: <br /> {hours}:{minutes}</p>
