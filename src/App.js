@@ -28,8 +28,8 @@ function addZero(num) {
   function showTemperature(response) {
     setText(response.data.name);
     setTemperature(`currently ${Math.round(response.data.main.temp)}ºC.`);
-    setHumidity(response.data.main.humidity)%;
-    setWind(response.data.wind.speed) km/h;
+    setHumidity(`(response.data.main.humidity)%`);
+    setWind (`(response.data.wind.speed) km/h`);
   }
 
 
