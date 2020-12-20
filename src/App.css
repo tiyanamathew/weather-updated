@@ -45,7 +45,7 @@
 
 .card-title {
   font-size: 18px;
-  color: #ff4271;
+  color: #007BFF;
 }
 
 .card-subtitle {
@@ -59,7 +59,7 @@
 
 .its {
   font-size: 48px;
-  color: #ff4271;
+  color: #007BFF;
   font-weight: bold;
 }
 
@@ -76,7 +76,7 @@
 
 #celcius {
   background: transparent;
-  border-color: #ff4271;
+  border-color: #007BFF;
   color: #6c757d;
   text-decoration: none;
 }
@@ -107,7 +107,7 @@
 }
 .five {
   border: 20px;
-  color: #ff4271;
+  color: #007BFF;
   text-align: center;
 }
 
@@ -121,13 +121,13 @@
 
 body {
   border: 2em;
-  color: #ff4271;
+  color: #007BFF;
   background-color: white;
 }
 
 #github {
-  color: #ff4271;
+  color: #007BFF;
   text-decoration: none;
   text-align: center;
-  color: #ff4271;
+
 }
